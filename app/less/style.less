@@ -1029,7 +1029,7 @@ footer{
 }
 
 .price-block{
-		margin-top: 5px;
+		margin-top: 4px;
 	.current-price{
 		color:@red;
 		font-weight: 600;
@@ -1042,7 +1042,7 @@ footer{
 		display:inline-block;
 		position: relative;
 		bottom: 7px;
-		margin-left: 18px;
+		margin-left: 17px;
 
 
 	}
@@ -1052,33 +1052,38 @@ footer{
 	border:1px solid @borderGrey2;
 	padding-left: 8px;
 	position: relative;
-	margin-top: 30px;
-	padding-top: 7px;
+	margin-top: 27px;
+	padding-top: 9px;
 	padding-bottom: 15px;
 }
 .add-basket-btn{
-display: inline-block;
+    display: inline-block;
     font-size: 16px;
     color: #fff;
-        letter-spacing: 0px;
-    padding: 1px 10px 8px 10px;
-    margin-top: 21px;
+    letter-spacing: 0.4px;
+    padding: 0px 13px 4px 12px;
+    margin-top: 22px;
     border-radius: 6px;
     text-transform: uppercase;
     font-weight: 900;
-    background: #a3dc14;
-    font-family: @HelvM;
-	margin-left: 5px;
-	background:@btnGreen ;
+    font-family: "HelveticaMedium";
+    margin-left: 3px;
+    
+    background:@btnGreen;
+    .text-btn{
+    	position: relative;
+    	top: -2px;
+    }
 	 &:after{
-	 	content:'\f07a';
-	 	font-family:FontAwesome;
-	 	font-size: 27px;
-	 	padding-left: 12px;
-	 }
-	 &:hover{
-	 	color:#fff;
-	 }
+		    content: '\f07a';
+		    font-family: FontAwesome;
+		    font-size: 30px;
+		    padding-left: 7px;
+	 
+	}
+	&:hover{
+		color:#fff;
+	}
 }
 .wrap-list-option{
 	display: inline-block;
@@ -1090,7 +1095,7 @@ display: inline-block;
 	display: inline-block;
 	position: relative;
 	height: 28px;
-	width: 220px;
+	width: 227px;
 	font-size: 16px;
 	color:@greyText;
 	font-weight: 600;
@@ -1099,7 +1104,7 @@ display: inline-block;
 		content:'\f107';
 	 	font-family:FontAwesome;
 	 	position: absolute;
-	 	right: 6px;
+	 	right: 8px;
 	 	top: 50%;
 	 	transform:translateY(-50%);
 	 	font-size:20px ;
@@ -1110,7 +1115,7 @@ display: inline-block;
 		position: absolute;
 		width: 1px;
 		background: @borderGrey2;
-		right: 24px;
+		right: 27px;
 		top:0;
 
 	}
@@ -1121,10 +1126,11 @@ display: inline-block;
 	position: relative;
 	display: block;
 	max-height:0;
-	width: 220px;
+	width: 227px;
 	transition:1s linear;
 	font-size: 16px;
 	position: absolute;
+	z-index: 5;
 
 
 
@@ -1154,12 +1160,18 @@ display: inline-block;
 }
 
 .add-item-prod,.del-item-prod{
-	padding: 0 5px;
+	
 	font-size: 21px;
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
 	top:-2px;
+}
+.add-item-prod{
+	padding-right: 5px;
+}
+.del-item-prod{
+	padding-left: 5px;
 }
 .wrap-quant-prod{
 	border:1px solid @borderGrey2;
@@ -1167,7 +1179,7 @@ display: inline-block;
 	border-radius:3px;
 	height: 28px;
 	position: relative;
-	top:2px;
+	top:1px;
 	-moz-user-select: none;
 -khtml-user-select: none;
 user-select: none;  
@@ -1189,12 +1201,12 @@ margin-left: 10px;
 
 }
 .like-product{
-	font-size: 28px;
-	margin-left: 16px;
+    font-size: 26px;
+    margin-left: 19px;
 	transition:.3s;
 	position: relative;
 	cursor: pointer;
-    	top: 6px;
+    	top: 3px;
     color:@greyText;
 	&:hover{
 		color:@red;
@@ -1209,7 +1221,7 @@ margin-left: 10px;
 	font-size: 14px;
 	color:@greyText;
 	font-weight: 600;
-	margin-top: 14px;
+	margin-top: 15px;
     margin-left: 15px;
 }
 .all-summ, .all-summ-text{
@@ -1217,7 +1229,7 @@ margin-left: 10px;
 }
 .all-summ-text{
 	margin-top: 9px;
-	line-height: 19px;
+	line-height: 18px;
 }
 .all-summ{
 	font-size: 22px;
@@ -1225,7 +1237,7 @@ margin-left: 10px;
 }
 
 .wrap-def-text{
-	margin-top: 32px;
+	margin-top: 33px;
 	margin-left: 14px;
 	line-height: 12px;
 	.def-text{
@@ -1292,6 +1304,7 @@ width: 11px;
 }
 .about-product{
 	background:@grey;
+	padding-bottom: 84px;
 }
 .wrap-name-prod{
 	padding: 33px 0;
@@ -1347,6 +1360,77 @@ width: 11px;
 	}
 }
 
+.other-product{
+	padding-top: 39px;
+}
+.other-product-title{
+	letter-spacing: -0.4px;
+}
+.mini-card-prod{
+	margin-top: 14px;
+	margin-left: -7px;
+	border:1px solid @borderGrey;
+	.img-min-prod{
+		height: 155px;
+		width: 100%;
+		background: #cff;
+	}
+	.wrap-about-min-prod{
+	padding-left: 23px;
+    line-height: 14px;
+    margin-top: 7px;
+	.mini-link-prod{
+		font-size: 12px;
+		color:@blue;
+	}
+	}
+	
+	.wrap-mini-article{
+		margin-top: 3px;
+		 .mini-card-article{
+		font-size: 10px;
+		}
+	}
+	.warpe-delivery-date{
+		.delivery-date{
+			font-size: 10px;
+		    letter-spacing: 0.8px;
+		    color:@greyText2;
+		}
+	}
+
+	.wrap-price-mini-card{
+		
+    	letter-spacing: 1px;
+    .wrap-card-price{
+    	display: inline-block;
+    	padding-top: 15px;
+		.mini-card-price{
+			color:@blue;
+
+			font-weight: 600;
+		}
+	}
+}
+
+	.mini-bay-card{
+		display: inline-block;
+	    background: #a3dc14;
+        padding: 5px 7px;
+	    margin-left: 20px;
+	    border-radius: 4px;
+	    
+	    color:#fff;
+		&::after {
+    content: "\f07a";
+    font-family: FontAwesome;
+    font-size: 23px;
+    position: relative;
+    top: 2px;
+    
+}
+	}
+}
 
 
 
