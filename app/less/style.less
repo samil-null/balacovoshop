@@ -1000,11 +1000,12 @@ footer{
 	padding: 14px 0 5px;
 }
 .card-product-container{
-	padding-top: 40px;
+	padding-top: 41px;
 }
 .list-desc-prod{
 	li{
 		display: block;
+		
 	}
 	.wrap-articul{
 		margin-top: 4px;
@@ -1013,6 +1014,7 @@ footer{
 		margin-top: 4px;
 		width: 250px;
 		color:@greyText2;
+		line-height: 18px;
 	}
 }
 .name-product{
@@ -1026,7 +1028,7 @@ footer{
 }
 
 .price-block{
-		margin-top: 4px;
+		margin-top: 5px;
 	.current-price{
 		color:@red;
 		font-weight: 600;
@@ -1041,72 +1043,321 @@ footer{
 		bottom: 7px;
 		margin-left: 18px;
 
+
 	}
 }
 
 .options-prod{
 	border:1px solid @borderGrey2;
 	padding-left: 8px;
+	position: relative;
+	margin-top: 30px;
+	padding-top: 7px;
+	padding-bottom: 15px;
 }
 .add-basket-btn{
-	display: none;
-	font-size: 16px;
-	color:#fff;
-	letter-spacing: .8px;
-	padding:16px 10px;
-	border-radius: 6px;
-	text-transform: uppercase;
-	font-weight: 600;
-
+display: inline-block;
+    font-size: 16px;
+    color: #fff;
+        letter-spacing: 0px;
+    padding: 1px 10px 8px 10px;
+    margin-top: 21px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: #a3dc14;
+    font-family: @HelvM;
+	margin-left: 5px;
 	background:@btnGreen ;
 	 &:after{
 	 	content:'\f07a';
 	 	font-family:FontAwesome;
 	 	font-size: 27px;
-	 	padding-left: 8px;
+	 	padding-left: 12px;
 	 }
 	 &:hover{
 	 	color:#fff;
 	 }
 }
-
+.wrap-list-option{
+	display: inline-block;
+}
 .btn-option{
 	border:1px solid @borderGrey2;
-	padding: 4px 20px;
+	padding: 4px 11px;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
+	height: 28px;
+	width: 220px;
+	font-size: 16px;
+	color:@greyText;
+	font-weight: 600;
+	border-radius:3px;
+	&::after{
+		content:'\f107';
+	 	font-family:FontAwesome;
+	 	position: absolute;
+	 	right: 6px;
+	 	top: 50%;
+	 	transform:translateY(-50%);
+	 	font-size:20px ;
+	}
+	&::before{
+		content: '';
+		height: 27px;
+		position: absolute;
+		width: 1px;
+		background: @borderGrey2;
+		right: 24px;
+		top:0;
 
+	}
 } 
 .drop-option-list{
-	
-	background: red;
-	opacity: 0;
-	max-height: 0px;
+	overflow: hidden;
+	background: #fff;
 	position: relative;
+	display: block;
+	max-height:0;
+	width: 220px;
+	transition:1s linear;
+	font-size: 16px;
+	position: absolute;
+
+
+
+
 
 	
 
 	li{
 		
-		padding: 4px;
 		
+		padding:6px 11px;
 		cursor:pointer;
+		transition:.1s ease-in-out;
+		&:hover{
+			background:@blue;
+			color:#fff;
+		}
 
 	}
 }
 
+.open-options{
+	display: block;
+	
+	max-height: 600px;
+	
+}
+
+.add-item-prod,.del-item-prod{
+	padding: 0 5px;
+	font-size: 21px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	top:-2px;
+}
+.wrap-quant-prod{
+	border:1px solid @borderGrey2;
+	display: inline-block;
+	border-radius:3px;
+	height: 28px;
+	position: relative;
+	top:2px;
+	-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;  
+color:@greyText2; 
+margin-left: 10px;
+	.quant-inp{
+		width: 30px;
+		border: none;
+		text-align: center;
+		background: transparent;
+		font-size: 19px;
+		font-weight: 600;
+		outline: none;
+		color:@greyText;
+		 
 
 
+	}
+
+}
+.like-product{
+	font-size: 28px;
+	margin-left: 16px;
+	transition:.3s;
+	position: relative;
+	cursor: pointer;
+    	top: 6px;
+    color:@greyText;
+	&:hover{
+		color:@red;
+	    
+	}
+}
+.active-like{
+	color:@red !important;
+}
+
+.table-info{
+	font-size: 14px;
+	color:@greyText;
+	font-weight: 600;
+	margin-top: 14px;
+    margin-left: 15px;
+}
+.all-summ, .all-summ-text{
+	display: inline-block;
+}
+.all-summ-text{
+	margin-top: 9px;
+	line-height: 19px;
+}
+.all-summ{
+	font-size: 22px;
+	margin-left: 42px;
+}
+
+.wrap-def-text{
+	margin-top: 32px;
+	margin-left: 14px;
+	line-height: 12px;
+	.def-text{
+	font-size: 11px;
 
 
+}
+}
+.list-img-slide{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 450px;
+	margin-right: -22px;
+
+	 li{
+	 	width: 150px;
+	 	height: 150px;
+	 	background: #ccc;
+	 	border: 1px solid black;
+	 }
+
+	&::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:6px; 
+height:0px 
+} 
+
+&::-webkit-scrollbar-track { 
+background-color:#32312e; 
+box-shadow:0px 0px 3px #000 inset; 
+} 
+
+&::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+background-color:#ffcb17; 
+box-shadow:0px 1px 1px #fff inset; 
+background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+
+&::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:7px; 
+height:0px 
+} 
+
+&::-webkit-scrollbar{ 
+width: 11px; 
+}
+
+}
+
+// scroll
+
+/*
+	ScrollBar Styles
+*/
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
 
 
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: url(../images/scrollTrak.gif) repeat-y;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: url(../images/scrollDrag.gif) repeat-y;
+	cursor: pointer;
+	overflow: hidden;
+	left:1px;
+}
+
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(../images/scrollDragTop.gif) no-repeat;
+	height:3px;
+}
+
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(../images/scrollDragBot.gif) no-repeat;
+	height:3px;
+}
+
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 18px;
+	background: url(../images/arrow_up.gif) no-repeat;
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 18px;
+	background: url(../images/arrow_down.gif) no-repeat;
+}
 
 
-
-
-
+.scroll-pane {
+	width: 700px; /* Ширина видимой области*/
+	height: 275px; /* Высота видимой области*/
+	overflow: auto; /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+}
 
 
 

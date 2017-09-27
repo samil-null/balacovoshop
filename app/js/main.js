@@ -5,9 +5,9 @@ var dropBtn = document.querySelectorAll('.left-list-catalog li .drop-btn');
 		dropBtn[i].onclick = function(){
 			var thisBtn = this.classList.toggle('active-list');
 			var wrap = this.parentNode;
-			console.log(wrap)
+			
 			var wrap2 = wrap.querySelector('ul')
-			console.log(wrap2)
+			
 
 			wrap2.classList.toggle('active-drop');
 
@@ -93,19 +93,11 @@ function hoverEffectImgSmall2(){
 	dropOptionsListPar = document.querySelectorAll('.drop-option-list li')
 	console.log(dropOptionsListPar)
 
-	for (var i = 0; i < btnOptions.length; i++) {
-		var wrapOpt = btnOptions[i].parentNode;
-		var varEl = wrapOpt.querySelector('ul li')
-		var text = varEl.innerText;
-		console.log(text)
-		btnOptions[i].innerText = text;
-
-	}
 
 	console.log(btnOptions)
 	for (var i = 0; i < dropOptionsListPar.length; i++) {
 		dropOptionsListPar[i].onclick = function(){
-			betrayedInput = 
+			
 			text2 = this.innerText
 			var idPtod = this.id;
 			console.log(idPtod)
@@ -116,9 +108,146 @@ function hoverEffectImgSmall2(){
 			var test2 = test.value = idPtod;
 			console.log(test)
 			var text2 = this.innerText;
+			this.parentNode.classList.toggle('open-options')
+
 			
 
 			dropBtn[0].innerText = text2;
 
 		}
 	}
+//options
+
+var btnOpt = document.querySelectorAll('.wrap-list-option .btn-option');
+//console.log(dropBtn);
+
+	for (var i = 0; i < btnOpt.length; i++) {
+		btnOpt[i].onclick = function(){
+			let thisBtn = this.classList.toggle('open-options');
+			let wrap = this.parentNode;
+			
+			let wrap2 = wrap.querySelector('ul')
+			
+
+			wrap2.classList.toggle('open-options');
+
+
+		}
+	}
+
+	///quant prod
+
+	var addProd = document.getElementsByClassName('add-item-prod');
+	var delProd = document.getElementsByClassName('del-item-prod');
+	var quantInp = document.getElementsByClassName('quant-inp');
+
+for (var i = 0; i < addProd.length; i++) {
+	var test = delProd[i].parentNode.getElementsByClassName('quant-prod-inp')[0];
+	var quantProd = parseInt(test.value);
+	addProd[i].onclick = function(){
+		var inpQuqnt = this.parentNode.getElementsByClassName('quant-inp')[0];
+		
+			quantProd++
+			inpQuqnt.value = quantProd		
+			console.log(quantProd)
+			if (quantProd<=0) {
+				quantProd =+1;
+				inpQuqnt.value = quantProd
+			}
+			var hiddenInp = this.parentNode.getElementsByClassName('quant-prod-inp')[0];
+			hiddenInp.value = quantProd
+
+	}
+}
+for (var i = 0; i < delProd.length; i++) {
+	var test = delProd[i].parentNode.getElementsByClassName('quant-prod-inp')[0];
+	var quantProd = parseInt(test.value);
+	
+	delProd[i].onclick = function(){
+		
+		var inpQuqnt = this.parentNode.getElementsByClassName('quant-inp')[0];
+		var hiddenInp = this.parentNode.getElementsByClassName('quant-prod-inp')[0];
+			quantProd--
+			inpQuqnt.value = quantProd	
+		
+			if (quantProd<=0) {
+				quantProd =+1;
+				inpQuqnt.value = quantProd;
+				
+			}
+
+			
+			hiddenInp.value = quantProd
+	}
+}
+
+for (var i = 0; i < quantInp.length; i++) {
+
+	quantInp[i].oninput = function(){
+		inpVal = this.value
+		var hiddenInp2 = this.parentNode.getElementsByClassName('quant-prod-inp')[0];
+		
+		hiddenInp2.value = inpVal;
+		
+
+	}}
+
+
+
+for (var i = 0; i < quantInp.length; i++) {
+
+	quantInp[i].onkeypress = function(e) {
+
+      e = e || event;
+
+      if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+      var chr = getChar(e);
+
+      // с null надо осторожно в неравенствах, т.к. например null >= '0' => true!
+      // на всякий случай лучше вынести проверку chr == null отдельно
+      if (chr == null) return;
+
+      if (chr < '0' || chr > '9') {
+        return false;
+      }
+
+    }
+
+    function getChar(event) {
+      if (event.which == null) {
+        if (event.keyCode < 32) return null;
+        return String.fromCharCode(event.keyCode) // IE
+      }
+
+      if (event.which != 0 && event.charCode != 0) {
+        if (event.which < 32) return null;
+        return String.fromCharCode(event.which) // остальные
+      }
+
+      return null; // специальная клавиша
+    }
+}
+// like
+
+var likeItem = document.getElementsByClassName('like-product');
+
+for (var i = 0; i < likeItem.length; i++) {
+	likeItem[i].onclick = function(){
+		this.classList.toggle('active-like')
+		
+	
+	}
+
+	
+	
+}
+
+
+
+	jQuery(function()
+	{
+		jQuery('#pane').jScrollPane({scrollbarWidth:18, showArrows:true});
+	});
+
+	
