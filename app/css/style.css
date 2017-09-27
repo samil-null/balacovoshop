@@ -864,6 +864,7 @@ footer {
 }
 .card-product-container {
   padding-top: 41px;
+  padding-bottom: 41px;
 }
 .list-desc-prod li {
   display: block;
@@ -1105,67 +1106,6 @@ footer {
 .list-img-slide::-webkit-scrollbar {
   width: 11px;
 }
-/*
-	ScrollBar Styles
-*/
-.jScrollPaneContainer {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.jScrollPaneTrack {
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background: url(../images/scrollTrak.gif) repeat-y;
-}
-.jScrollPaneDrag {
-  position: absolute;
-  background: url(../images/scrollDrag.gif) repeat-y;
-  cursor: pointer;
-  overflow: hidden;
-  left: 1px;
-}
-.jScrollPaneDragTop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background: url(../images/scrollDragTop.gif) no-repeat;
-  height: 3px;
-}
-.jScrollPaneDragBottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  background: url(../images/scrollDragBot.gif) no-repeat;
-  height: 3px;
-}
-a.jScrollArrowUp {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  text-indent: -2000px;
-  overflow: hidden;
-  height: 18px;
-  background: url(../images/arrow_up.gif) no-repeat;
-}
-a.jScrollArrowDown {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  text-indent: -2000px;
-  overflow: hidden;
-  height: 18px;
-  background: url(../images/arrow_down.gif) no-repeat;
-}
 .scroll-pane {
   width: 700px;
   /* Ширина видимой области*/
@@ -1173,6 +1113,57 @@ a.jScrollArrowDown {
   /* Высота видимой области*/
   overflow: auto;
   /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+}
+.about-product {
+  background: #f9f9f9;
+}
+.wrap-name-prod {
+  padding: 33px 0;
+}
+.name-disc-product {
+  font-family: "HelveticaRoman";
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.wrap-text-desc-product .desc-product,
+.wrap-text-desc-product .char-name {
+  font-size: 16px;
+  font-family: "HelveticaRoman";
+  color: #737373;
+  font-weight: 600;
+}
+.wrap-text-desc-product .char-name {
+  margin-left: 13px;
+  letter-spacing: 0.3px;
+}
+.wrap-text-desc {
+  line-height: 18px;
+  margin-top: 11px;
+}
+.wrap-text-desc p {
+  color: 15px;
+  color: #737373;
+  font-weight: 600;
+}
+.table-chars {
+  margin-top: 9px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #737373;
+}
+.table-chars tr {
+  margin-top: 8px;
+  letter-spacing: -0.2px;
+}
+.table-chars tr td:nth-child(odd) {
+  height: 1px;
+  width: 193px;
+  padding-left: 13px;
+}
+.table-chars tr td:nth-child(even) {
+  height: 1px;
+  width: 220px;
 }
 @media (min-width: 1200px) {
   .container {
