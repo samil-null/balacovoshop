@@ -1,0 +1,36 @@
+/*====== Переменные с цветами ======*/
+/*====== Подключение шрифтов =======*/
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("../fonts/HelveticaLight/HelveticaLight.eot");
+  src: url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HelveticaRoman";
+  src: url("../fonts/Helvetica/helveticaRoman.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/Helvetica/HelveticaBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RalewayBlack";
+  src: url("../fonts/RalewayBlack/RalewayBlack.eot");
+  src: url("../fonts/RalewayBlack/RalewayBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBlack/RalewayBlack.woff") format("woff"), url("../fonts/RalewayBlack/RalewayBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HelveticaMedium";
+  src: url("../fonts/HelveticaMedium/HelveticaMedium.eot");
+  src: url("../fonts/HelveticaMedium/HelveticaMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaMedium/HelveticaMedium.woff") format("woff"), url("../fonts/HelveticaMedium/HelveticaMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*====== Переменные шрифтов ======*/
