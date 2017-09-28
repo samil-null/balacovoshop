@@ -1053,7 +1053,7 @@ footer{
 	padding-left: 8px;
 	position: relative;
 	margin-top: 27px;
-	padding-top: 9px;
+	
 	padding-bottom: 15px;
 }
 .add-basket-btn{
@@ -1085,8 +1085,12 @@ footer{
 		color:#fff;
 	}
 }
+.select-item{
+	margin-top: 9px;
+}
 .wrap-list-option{
 	display: inline-block;
+	background: #fff;
 }
 .btn-option{
 	border:1px solid @borderGrey2;
@@ -1213,7 +1217,7 @@ margin-left: 10px;
     border-radius:5px;
     .fa-heart-o{
     	position: relative;
-    	top:2px;
+    	top:3px;
     }
 	&:hover{
 		color:@red;
@@ -1444,9 +1448,8 @@ margin-left: 10px;
 	}
 }
 
-.new-prod-shares{
+.new-prod-shares, .sale-prod-shares, .best-prod-shares{
 	position: absolute;
-	    position: absolute;
     top: 30px;
     left: 4px;
     border-radius: 4px;
@@ -1463,7 +1466,19 @@ margin-left: 10px;
     	top: 2px;
 	}
 }
+.sale-prod-shares{
+	box-shadow: 0px 1px 10px 0px rgba(240,41,31, 0.75);
+	background: @red;
+}
 
+.best-prod-shares{
+	padding: 0px 6px;
+	background:@green;
+	box-shadow: 0px 1px 10px 0px rgb(151,203,18, 0.75);
+	.min-star{
+		font-size: 12px;
+	}
+}
 
 
 

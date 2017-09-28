@@ -915,7 +915,6 @@ footer {
   padding-left: 8px;
   position: relative;
   margin-top: 27px;
-  padding-top: 9px;
   padding-bottom: 15px;
 }
 .add-basket-btn {
@@ -945,8 +944,12 @@ footer {
 .add-basket-btn:hover {
   color: #fff;
 }
+.select-item {
+  margin-top: 9px;
+}
 .wrap-list-option {
   display: inline-block;
+  background: #fff;
 }
 .btn-option {
   border: 1px solid #ebebeb;
@@ -1054,7 +1057,7 @@ footer {
 }
 .like-product .fa-heart-o {
   position: relative;
-  top: 2px;
+  top: 3px;
 }
 .like-product:hover {
   color: #f0291f;
@@ -1250,7 +1253,9 @@ footer {
   position: relative;
   left: -2px;
 }
-.new-prod-shares {
+.new-prod-shares,
+.sale-prod-shares,
+.best-prod-shares {
   position: absolute;
   top: 30px;
   left: 4px;
@@ -1261,12 +1266,26 @@ footer {
   box-shadow: 0px 1px 10px 0px rgba(53, 127, 190, 0.75);
   color: #fff;
 }
-.new-prod-shares .text-shares {
+.new-prod-shares .text-shares,
+.sale-prod-shares .text-shares,
+.best-prod-shares .text-shares {
   font-family: "MyriadProBold";
   font-size: 18px;
   text-transform: capitalize;
   position: relative;
   top: 2px;
+}
+.sale-prod-shares {
+  box-shadow: 0px 1px 10px 0px rgba(240, 41, 31, 0.75);
+  background: #f0291f;
+}
+.best-prod-shares {
+  padding: 0px 6px;
+  background: #97cb12;
+  box-shadow: 0px 1px 10px 0px #97cb12;
+}
+.best-prod-shares .min-star {
+  font-size: 12px;
 }
 @media (min-width: 1200px) {
   .container {

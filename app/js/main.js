@@ -142,10 +142,12 @@ var btnOpt = document.querySelectorAll('.wrap-list-option .btn-option');
 	var quantInp = document.getElementsByClassName('quant-inp');
 
 for (var i = 0; i < addProd.length; i++) {
-	var test = delProd[i].parentNode.getElementsByClassName('quant-prod-inp')[0];
-	var quantProd = parseInt(test.value);
+	
+	let quantProd = 1;
 	addProd[i].onclick = function(){
+		
 		var inpQuqnt = this.parentNode.getElementsByClassName('quant-inp')[0];
+		var test =inpQuqnt.value
 		
 			quantProd++
 			inpQuqnt.value = quantProd		
@@ -155,16 +157,17 @@ for (var i = 0; i < addProd.length; i++) {
 				inpQuqnt.value = quantProd
 			}
 			var hiddenInp = this.parentNode.getElementsByClassName('quant-prod-inp')[0];
-			hiddenInp.value = quantProd
+			hiddenInp.value = quantProd;
+			console.log(hiddenInp)
 
 	}
 }
 for (var i = 0; i < delProd.length; i++) {
-	var test = delProd[i].parentNode.getElementsByClassName('quant-prod-inp')[0];
-	var quantProd = parseInt(test.value);
+	
+	let quantProd = 1;
 	
 	delProd[i].onclick = function(){
-		
+		var quantProd = 0;
 		var inpQuqnt = this.parentNode.getElementsByClassName('quant-inp')[0];
 		var hiddenInp = this.parentNode.getElementsByClassName('quant-prod-inp')[0];
 			quantProd--
@@ -243,8 +246,5 @@ for (var i = 0; i < likeItem.length; i++) {
 	
 }
 
+//shares_block
 
-
-
-
-	
