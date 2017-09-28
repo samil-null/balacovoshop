@@ -245,9 +245,6 @@ for (var i = 0; i < likeItem.length; i++) {
 
 
 
-	jQuery(function()
-	{
-		jQuery('#pane').jScrollPane({scrollbarWidth:18, showArrows:true});
-	});
+
 
 	
