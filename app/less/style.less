@@ -1628,6 +1628,7 @@ margin-left: 10px;
 }
 .inner-catalog{
 	padding-top: 17px;
+	margin-bottom: 18px;
 }
 
 .list-item-catalog{
@@ -1635,15 +1636,105 @@ margin-left: 10px;
 }
 .list-item-catalog{
 	tr{
+		display: block;
+		transition:.3s;
+		&:hover{
+			 box-shadow: 0px 1px 5px 1px rgba(53, 127, 190, 0.4);
+		}
+		 &:hover td .min-max-price{
+			color:@blue;
+		}
+		 &:hover td{
+		 	border:1px solid transparent;
+		 	background: #fff;
+		 	border-top:1px solid @blue;
+		 	border-bottom: 1px solid ;
+		 	color:@blue;
+		 }
+		
+		&:hover td:first-child{
+			border-left:1px solid @blue;
+		}
+		&:hover td:last-child{
+			border-right:1px solid @blue;
+		}
+			
+		
+		
+		}
+		
 		td{
+		transition: .3s;
+		height: 77px;
+		text-align: center;
 		border:1px solid @borderGrey2;
-		padding: 11px 11px;
+		
+
+	}
+	.img-category{
+		width: 81px;
+	}
+	.name-category{
+			width:265px;
+			font-size: 20px;
+			color:@quantColor;
+			
+		}
+	.quant-prod-category{
+		width: 114px;
+		font-size: 20px;
+			color:@quantColor;
+			
+
+	}
+	
+	.price-category{
+		width: 320px;
 	}
 }
+
+
+.min-max-price{
+	font-family:HelvB;
+	font-size: 20px;
+	font-weight: 600;
+	color:@quantColor;
+	.min-price, .max-price{
+		font-weight: 600;
+		font-family:HelvB;
+	}
 }
 
 .list-items-category{
-	padding-top: 13px;
+	padding-top: 11px;
+}
+.link-item-ateg-prod{
+	display:table-column;
+}
+
+.inner-catalog-title{
+	font-size: 24px;
+}
+.wrap-range-price{
+	display: flex;
+	justify-content: center;
+}
+.arrow-catalog{
+	    font-size: 28px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.range-price{
+	text-align: center;
+	display: inline-block;
+	width: 87px;
+	margin: 0 7px;
+}
+.label-filter{
+	display: block;
+	cursor: pointer;
 }
 
 @media (min-width: 1200px){
