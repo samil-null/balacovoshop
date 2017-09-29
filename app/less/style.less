@@ -1716,8 +1716,7 @@ margin-left: 10px;
 	font-size: 24px;
 }
 .wrap-range-price{
-	display: flex;
-	justify-content: center;
+	
 }
 .arrow-catalog{
 	    font-size: 28px;
@@ -1725,16 +1724,67 @@ margin-left: 10px;
     top: 3px;
     left: 5px;
 }
-
+.price-filter{
+	padding-top: 13px;
+	padding-left: 19px;
+	font-size: 18px;
+	background: @grey;
+	//временный паддинг
+	padding-bottom: 40px;
+	border:1px solid transparent;
+}
 .range-price{
 	text-align: center;
 	display: inline-block;
 	width: 87px;
-	margin: 0 7px;
+	font-size: 16px;
+	margin-top: 10px;
+	border:none;
+	&:focus{
+		    border: 1px solid #3280bf;
+    box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
+	}
+
+	
+}
+.input-one{
+		margin-right:3px ;
+	}
+
+.input-two{
+	margin-left: 3px;
+	margin-right: 3px;
 }
 .label-filter{
 	display: block;
 	cursor: pointer;
+	font-size: 16px;
+	color:@greyText;
+}
+.filter-type-2{
+	margin-top: 16px;
+}
+.type-checkbox{
+	display: block;
+	font-size: 12px;
+	cursor: pointer;
+	input{
+		display: none;
+
+	}
+	.check{
+		display: inline-block;
+		height: 17px;
+		width: 17px;
+		background: #fff;
+		border:1px solid @borderGrey;
+	}
+
+	input:checked + .check{
+		background: @blue;
+		transition:.3s;
+	}
+	
 }
 
 @media (min-width: 1200px){

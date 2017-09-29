@@ -1482,25 +1482,66 @@ footer {
 .inner-catalog-title {
   font-size: 24px;
 }
-.wrap-range-price {
-  display: flex;
-  justify-content: center;
-}
 .arrow-catalog {
   font-size: 28px;
   position: relative;
   top: 3px;
   left: 5px;
 }
+.price-filter {
+  padding-top: 13px;
+  padding-left: 19px;
+  font-size: 18px;
+  background: #f9f9f9;
+  padding-bottom: 40px;
+  border: 1px solid transparent;
+}
 .range-price {
   text-align: center;
   display: inline-block;
   width: 87px;
-  margin: 0 7px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+}
+.range-price:focus {
+  border: 1px solid #3280bf;
+  box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
+}
+.input-one {
+  margin-right: 3px ;
+}
+.input-two {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 .label-filter {
   display: block;
   cursor: pointer;
+  font-size: 16px;
+  color: #737373;
+}
+.filter-type-2 {
+  margin-top: 16px;
+}
+.type-checkbox {
+  display: block;
+  font-size: 12px;
+  cursor: pointer;
+}
+.type-checkbox input {
+  display: none;
+}
+.type-checkbox .check {
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+.type-checkbox input:checked + .check {
+  background: #3280bf;
+  transition: .3s;
 }
 @media (min-width: 1200px) {
   .container {
