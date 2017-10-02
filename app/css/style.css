@@ -69,9 +69,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-  background: url('../img/index-final.jpg') no-repeat top center;
-}
 .custom-container {
   max-width: 1320px;
   padding-right: 15px;
@@ -1060,7 +1057,6 @@ footer {
 }
 .like-product .fa-heart-o {
   position: relative;
-  top: 3px;
 }
 .like-product:hover {
   color: #f0291f;
@@ -1186,7 +1182,7 @@ footer {
 .mini-card-prod .wrap-about-min-prod {
   padding-left: 23px;
   line-height: 14px;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 .mini-card-prod .wrap-about-min-prod .mini-link-prod {
   font-size: 12px;
@@ -1736,6 +1732,80 @@ footer {
 .shares-block-item-list .best-prod-shares {
   top: 11px;
   left: -8px;
+}
+.my-basket {
+  padding-top: 42px;
+}
+.name-basket {
+  font-size: 26px;
+  color: #3280bf;
+  letter-spacing: 0.3px;
+  margin-left: 15px;
+}
+.basket-bonus {
+  background: #f9f9f9;
+}
+.wrap-basket-bonus {
+  padding-top: 11px;
+  padding-bottom: 6px;
+}
+.wrap-basket-bonus .text-basket-bonus {
+  font-size: 12px;
+  margin-left: 15px;
+  letter-spacing: 0px;
+  color: #5d5d5d;
+}
+.title-about-basket {
+  background: #3280bf;
+  margin-left: -15px;
+  padding-left: 15px;
+  margin-right: -100%;
+  padding: 11px 0px 6px 15px;
+  border-radius: 3px 0 0 3px;
+}
+.title-about-basket .title-text {
+  color: #fff;
+  font-family: "HelveticaRoman";
+  font-size: 14px;
+}
+.about-basket-2 {
+  padding: 11px 17px;
+  margin-top: 24px;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+}
+.about-basket-2 {
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  border: 2px solid #3280bf;
+  letter-spacing: 0.1px;
+}
+.about-basket-2 .text-about-basket-2 {
+  font-size: 14px;
+  font-family: "HelveticaRoman";
+  color: #3280bf;
+}
+.qunt-summ-prod {
+  margin-top: 45px;
+  padding-left: 23px;
+  line-height: 9px;
+  letter-spacing: 0.2px;
+}
+.all-prod-basket {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.all-prod-basket .qunt-prod-basket {
+  font-weight: 500;
+}
+.promo-code-basket {
+  margin-left: 22px;
+}
+.promo-code-basket input {
+  font-size: 14px;
+  border: none;
+  padding-left: 5px;
 }
 @media (min-width: 1200px) {
   .container {
