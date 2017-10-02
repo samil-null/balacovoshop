@@ -1739,7 +1739,7 @@ margin-left: 10px;
 	width: 87px;
 	font-size: 16px;
 	margin-top: 10px;
-	border:none;
+	border:1px solid #fff;
 	&:focus{
 		    border: 1px solid #3280bf;
     box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
@@ -1763,6 +1763,8 @@ margin-left: 10px;
 }
 .filter-type-2{
 	margin-top: 16px;
+    padding-bottom: 8px;
+	
 }
 .type-checkbox{
 	display: block;
@@ -1778,6 +1780,8 @@ margin-left: 10px;
 		width: 17px;
 		background: #fff;
 		border:1px solid @borderGrey;
+	    position: relative;
+    	top: 3px;
 	}
 
 	input:checked + .check{
@@ -1786,6 +1790,127 @@ margin-left: 10px;
 	}
 	
 }
+.teg-check{
+	margin-left:6px;
+	font-size:12px ;
+	font-weight: 500;
+	color: @quantColor;
+}
+.price-filter{
+	transition:.3s;
+	&:hover{
+		box-shadow: 0px 6px 17px -8px rgba(0, 0, 0, 0.75);
+
+	}
+}
+.filter-like{
+	 border: none;
+  
+    font-size: 19px;
+   
+    margin-left: 14px;
+}
+.filter-price-range{
+  	display: inline-block;
+  	margin-left: 12px;
+  	position: relative;
+  	    line-height: 1px;
+  	
+
+	label{
+			margin-bottom: 0;
+			top: 3px;
+			position: relative;
+		input{
+			display: none;
+
+		}
+		 span{
+		 	cursor: pointer;
+		 	font-size: 26px;
+		 }
+		input:checked + span{
+			color:@blue;
+		}
+
+	}
+}
+.bars{
+			position: relative;
+			top:-1px;
+		}
+.wrap-filter-prod{
+	background: @grey;
+	color:@greyBlock;
+	padding: 1px 0 ;
+
+}
+.search-filter{
+	color:greyBlock;
+	display: inline-block;
+	margin-left: 5px;
+	top: -3px;
+	position: relative;
+	margin-left: 24px;
+	font-size: 13px;
+	color:black;
+	.search-prod{
+		height: 17px;
+		width: 171px;
+		
+	}
+	.search-submit{
+	    position: relative;
+    	top: 1px;
+		background:@green;
+		border:none;
+		color:#fff;
+		font-size: 12px;
+	    padding: 0px 14px;
+    	margin-left: 4px;
+	}
+}
+.view{
+
+	display: inline-block;
+	float: right;
+	margin-right: 12px;
+    margin-top: 6px;
+		label{
+			
+			font-size: 20px;
+			cursor: pointer;
+			input{
+				display: none;
+				&:checked + span{
+					color:black;
+				}
+			}
+		}
+}
+.quant-prod-display{
+	float: right;
+	line-height: 30px;
+	label{
+		padding: 0 2px;
+
+		input{
+			display: none;
+		}
+		input:checked + span{
+			color:black;
+			font-weight: 900;
+
+		}
+		span{
+			cursor: pointer;
+			color:@quantColor;
+			font-weight: 500;
+			
+		}
+	}
+}
+
 
 @media (min-width: 1200px){
 

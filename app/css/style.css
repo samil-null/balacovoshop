@@ -1502,7 +1502,7 @@ footer {
   width: 87px;
   font-size: 16px;
   margin-top: 10px;
-  border: none;
+  border: 1px solid #fff;
 }
 .range-price:focus {
   border: 1px solid #3280bf;
@@ -1523,6 +1523,7 @@ footer {
 }
 .filter-type-2 {
   margin-top: 16px;
+  padding-bottom: 8px;
 }
 .type-checkbox {
   display: block;
@@ -1538,10 +1539,118 @@ footer {
   width: 17px;
   background: #fff;
   border: 1px solid #d7d7d7;
+  position: relative;
+  top: 3px;
 }
 .type-checkbox input:checked + .check {
   background: #3280bf;
   transition: .3s;
+}
+.teg-check {
+  margin-left: 6px;
+  font-size: 12px ;
+  font-weight: 500;
+  color: #5d5d5d;
+}
+.price-filter {
+  transition: .3s;
+}
+.price-filter:hover {
+  box-shadow: 0px 6px 17px -8px rgba(0, 0, 0, 0.75);
+}
+.filter-like {
+  border: none;
+  font-size: 19px;
+  margin-left: 14px;
+}
+.filter-price-range {
+  display: inline-block;
+  margin-left: 12px;
+  position: relative;
+  line-height: 1px;
+}
+.filter-price-range label {
+  margin-bottom: 0;
+  top: 3px;
+  position: relative;
+}
+.filter-price-range label input {
+  display: none;
+}
+.filter-price-range label span {
+  cursor: pointer;
+  font-size: 26px;
+}
+.filter-price-range label input:checked + span {
+  color: #3280bf;
+}
+.bars {
+  position: relative;
+  top: -1px;
+}
+.wrap-filter-prod {
+  background: #f9f9f9;
+  color: #e0e0e0;
+  padding: 1px 0 ;
+}
+.search-filter {
+  color: greyBlock;
+  display: inline-block;
+  margin-left: 5px;
+  top: -3px;
+  position: relative;
+  margin-left: 24px;
+  font-size: 13px;
+  color: black;
+}
+.search-filter .search-prod {
+  height: 17px;
+  width: 171px;
+}
+.search-filter .search-submit {
+  position: relative;
+  top: 1px;
+  background: #97cb12;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 0px 14px;
+  margin-left: 4px;
+}
+.view {
+  display: inline-block;
+  float: right;
+  margin-right: 12px;
+  margin-top: 6px;
+}
+.view label {
+  font-size: 20px;
+  cursor: pointer;
+}
+.view label input {
+  display: none;
+}
+.view label input:checked + span {
+  color: black;
+}
+.quant-prod-display {
+  float: right;
+  line-height: 30px;
+}
+.quant-prod-display label {
+  padding: 0 2px;
+}
+.quant-prod-display label input {
+  display: none;
+}
+.quant-prod-display label input:checked + span {
+  color: black;
+  font-weight: 900;
+}
+.quant-prod-display label span {
+  cursor: pointer;
+  color: #5d5d5d;
+  font-weight: 500;
 }
 @media (min-width: 1200px) {
   .container {
