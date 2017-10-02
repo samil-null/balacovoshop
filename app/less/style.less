@@ -1401,7 +1401,11 @@ margin-left: 10px;
 	}
 }
 
-	.mini-bay-card{
+	
+	}
+
+
+.mini-bay-card{
 		display: inline-block;
 	    background: #a3dc14;
         padding: 5px 7px;
@@ -1416,7 +1420,9 @@ margin-left: 10px;
     position: relative;
     top: 2px;
     
-}
+	}
+	&:hover{
+		color:#fff;
 	}
 }
 .wrap-bottom-bar-min-cart{
@@ -1455,11 +1461,11 @@ margin-left: 10px;
 	position: absolute;
     top: 30px;
     left: 4px;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 0px 10px;
     background:@blue;
     line-height: 21px;
-	box-shadow: 0px 1px 10px 0px rgba(53, 127, 190, 0.75);
+	box-shadow: 0px 1px 3px 0px rgba(53, 127, 190, 0.75);
     color:#fff;
 	.text-shares{
 		font-family:@MPB;
@@ -1891,6 +1897,7 @@ margin-left: 10px;
 .quant-prod-display{
 	float: right;
 	line-height: 30px;
+    letter-spacing: 0.2px;
 	label{
 		padding: 0 2px;
 
@@ -1910,8 +1917,97 @@ margin-left: 10px;
 		}
 	}
 }
+.item-prod-table-list{
+	background: #fff;
+}
+.img-prod-item{
+	height: 119px;
+	position: relative;
+}
+.name-product-item{
+  	max-width: 288px;
+    padding-top: 11px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+	.link-name-prod-item{
+		color:@blue;
+		font-family:@HelvR;
+		font-weight: 500;
+		
+	}
+}
 
+.wrap-articil-prod{
+	position: relative;
+    top: -3px;
+    letter-spacing: 0px;
+	.articul-prod{
+		font-size: 10px;
+		color:@artColor;
+	}
+}
+.wrap-price-item{
+	display: inline-block;
+	margin-left: 6px;
+	.price-item{
+		font-size: 22px;
+		color:@blue;
+		font-weight: 600;
+		line-height: 1px;
+		
+	}
+}
+.wrap-item-quntum{
+	display: block;
+    padding-top: 38px;
+}
+.wrap-delivery{
+    margin-left: 15px;
+	margin-top: 4px;
+	.delivery-time{
+		font-size: 10px;
+		color:@artColor;
+	}
+}
+.like-item-prod{
+    border: none;
+    font-size: 20px;
+    margin-left: 41px;
+    
 
+}
+.card-bay-item{
+	  
+    padding: 0px 11px;
+    margin-left: 12px;
+    border-radius: 4px;
+    color: #fff;
+    
+    &::after{
+
+    font-size: 29px;
+    position: relative;
+    top: -1px;
+    }
+}
+.item-product-list{
+	border-radius: 5px;
+	transition:.3s;
+	
+	&:hover{
+		box-shadow: 0px 3px 15px -7px rgba(0, 0, 0, 0.75);
+		
+	}
+}
+.buy-block{
+	padding-right: 34px;
+}
+.shares-block-item-list{
+	.new-prod-shares, .sale-prod-shares, .best-prod-shares{
+		top:11px;
+		left:-8px;
+	}
+}
 @media (min-width: 1200px){
 
 .container {
