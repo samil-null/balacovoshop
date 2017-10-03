@@ -246,5 +246,55 @@ for (var i = 0; i < likeItem.length; i++) {
 	
 }
 
-//shares_block
+//checkbox
+var checkboxOne = document.getElementById('check1');
+var checkboxTwo = document.getElementById('check2');
+var checkLabel = document.getElementsByClassName('deliver-item')
+console.log(checkboxOne,checkboxTwo,checkLabel)
+
+for (var i = 0; i < checkLabel.length; i++) {
+
+	checkLabel[i].onclick = function rell(){
+
+		if (checkboxOne.checked) {
+			var test = checkboxOne.parentNode.getElementsByClassName('wrap-text-deliver')[0];
+			test.classList.toggle('active-deliver')
+		}
+	
+		if (checkboxTwo.checked) {
+			var test2 = checkboxTwo.parentNode.getElementsByClassName('wrap-text-deliver')[0];
+			test2.classList.toggle('active-deliver')
+		}
+		
+
+		
+	}
+}
+
+
+//modal window
+
+var modalWin = document.getElementsByClassName('wrap-quick-buy-form')[0];
+var quickBtn = document.getElementsByClassName('quick-buy')[0];
+var quickForm = document.getElementsByClassName('quick-buy-form')[0];
+var closeWindow = document.getElementsByClassName('close-window')[0];
+
+quickBtn.onclick = function(){
+	modalWin.classList.toggle('open-modal');
+	quickForm.classList.toggle('open-window')
+}
+closeWindow.onclick = function(){
+	modalWin.classList.toggle('open-modal');
+	quickForm.classList.toggle('open-window')
+}
+
+
+
+
+
+
+
+
+
+
 
