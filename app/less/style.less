@@ -2022,7 +2022,7 @@ margin-left: 10px;
     
 }
 .basket-bonus{
-	background: @grey;
+	background: linear-gradient(90deg, @grey 70%, @blue 30%);
 }
 .wrap-basket-bonus{
 	padding-top: 11px;
@@ -2036,10 +2036,10 @@ margin-left: 10px;
 			}
 }
 .title-about-basket{
-	background: @blue;
-	margin-left: -15px;
+	
+	margin-left: -20px;
 	padding-left: 15px;
-	margin-right: -100%;
+	
 	padding: 11px 0px 6px 15px;
 	border-radius: 3px 0 0 3px;
 	.title-text{
@@ -2070,10 +2070,11 @@ margin-left: 10px;
 	}
 }
 .wrap-deliver-setting{
-	    margin-top: 19px;
+    margin-top: 19px;
     box-shadow: 3px 2px 13px -5px rgba(0, 0, 0, 0.75);
     padding-top: 26px;
     padding-bottom: 21px;
+    background: #fff;
 
 }
 .qunt-summ-prod{
@@ -2293,6 +2294,10 @@ margin-left: 10px;
 }
  .basket-table{
 	margin-top: 42px;
+
+	.notenough-money{
+		border:1px solid @red;
+	}
  }
 .basket-qunt-item{
 	padding-left: 88px;
@@ -2311,6 +2316,17 @@ margin-left: 10px;
 	}
 	.wrap-price-item{
 		margin-top: 11px;
+
+	}
+}
+.notenough-money-window{
+		margin-top: 20px;
+		margin-left: 20px;
+	.text-notmaney{
+		color:@red;
+		font-family:@HelvR ;
+		font-size: 16px;
+		margin-bottom: 0;
 	}
 }
 @media (min-width: 1200px){
