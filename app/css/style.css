@@ -1855,7 +1855,7 @@ footer {
   width: 85px;
 }
 .img-deliver {
-  background: url(../img/car-del.png) no-repeat;
+  background: url(../img/deliv.png) no-repeat;
   height: 44px;
   width: 64px;
   display: block;
@@ -1863,7 +1863,7 @@ footer {
 }
 .img-deliver-2 {
   display: block;
-  background: url(../img/car-deliver.png) no-repeat;
+  background: url(../img/mydeliv.png) no-repeat;
   height: 44px;
   width: 48px;
   cursor: pointer;
@@ -1876,10 +1876,10 @@ footer {
   display: none;
 }
 .deliver-item input:checked + .img-deliver {
-  background: url(../img/car-del-2.png);
+  background: url(../img/delev-active.png);
 }
 .deliver-item input:checked + .img-deliver-2 {
-  background: url(../img/car-deliver-active.png);
+  background: url(../img/mydeliv-active.png);
 }
 .active-deliver {
   color: #3280bf;
