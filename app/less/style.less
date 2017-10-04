@@ -2329,6 +2329,151 @@ margin-left: 10px;
 		margin-bottom: 0;
 	}
 }
+
+// заказ шаг 2
+
+
+.ordering{
+	padding-top: 23px;
+}
+.ordiring-step-two{
+	background:@grey;
+
+}
+.wrap-order-input{
+	margin:0 15px;
+	box-shadow: 0 1px 4px rgba(46, 46, 46, 0.25);
+	padding-top: 10px;
+	background: #fff;
+}
+.name-order{
+	color:@blue;
+	font-size: 16px;
+	font-family: @HelvR;
+	
+}
+
+
+.wrap-order-date{
+	
+	.order-input{
+		    min-width: 100%;
+		    background:@grey ;
+		    border: none;
+		    margin-top: 7px;
+		    padding: 3px;
+		    padding-left: 10px;
+		    border: 1px solid transparent;
+		    font-size: 14px;
+
+
+			&:focus{
+				border: 1px solid #3280bf;
+    			box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
+			}
+
+	}
+}
+.order-textarea{
+	height: 87px;
+	padding:10px;
+	resize: none;
+	outline: none;
+}
+.payment-method{
+	    padding-top: 33px;
+    padding-left: 17px;
+}
+.choice-method{
+	display: block;
+	margin-bottom: 9px;
+	
+	input{
+		display: none;
+	}
+	input:checked + .pic-methode{
+		background:@grey2;
+		border-color: @blue;
+	    box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
+	}
+	input:checked + .methode-buy-text{
+		color:@blue
+	}
+
+	.methode-buy-text{
+		    display: table-cell;
+		    padding-left: 28px;
+		    padding-top: 5px;
+		    letter-spacing: 0.2px;
+		    line-height: 17px;
+		.text-method{
+			font-family: @HelvR;
+			font-weight:100;
+			color:@greyText;
+		}
+	}
+}
+.pic-methode{
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	height:59px;
+	width: 150px;
+	border:2px solid @grey;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.delevery-step-two{
+	margin-top:0;
+	padding-top: 35px;
+	box-shadow: none;
+}
+
+.order-basket-text{
+	margin-top: 19px;
+	border-width: 3px;
+ 	padding: 13px 16px;
+
+}
+.order-basket-btn{
+	width: 100%;
+	margin-top: 19px;
+	font-weight: 900;
+	font-size: 17px;
+    padding: 5px 37px;
+    border-radius: 3px;
+}
+.test{
+	background: blue;
+}
+.test2{
+	background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px){
 
 .container {

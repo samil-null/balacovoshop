@@ -279,6 +279,19 @@ var quickBtn = document.getElementsByClassName('quick-buy')[0];
 var quickForm = document.getElementsByClassName('quick-buy-form')[0];
 var closeWindow = document.getElementsByClassName('close-window')[0];
 
+
+
+//check buy
+
+var checkBuy = document.getElementsByClassName('check-buy');
+
+
+
+
+
+
+
+
 quickBtn.onclick = function(){
 	modalWin.classList.toggle('open-modal');
 	quickForm.classList.toggle('open-window')
@@ -287,14 +300,4 @@ closeWindow.onclick = function(){
 	modalWin.classList.toggle('open-modal');
 	quickForm.classList.toggle('open-window')
 }
-
-
-
-
-
-
-
-
-
-
 
