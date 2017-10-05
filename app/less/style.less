@@ -818,7 +818,7 @@ footer{
 
 }
 .bread-crumbs{
-	    padding: 18px 0 19px;
+	    padding: 18px 0 19px 8px;
 	li{
 		display: inline-block;
 		
@@ -1502,7 +1502,7 @@ margin-left: 10px;
 }
 
 .wrap-desc-card-product{
-	padding-left: 17px;
+	padding-left: 14px;
 	padding-top: 12px;
 	padding-bottom: 14px;
 }
@@ -1510,6 +1510,7 @@ margin-left: 10px;
 	margin-top: 16px;
 	box-shadow: 4px 3px 29px -6px rgba(0, 0, 0, 0.25);
 	margin-bottom: 30px;
+	background: #fff;
 
 	 .pic-product{
 	 	height: 200px;
@@ -1537,6 +1538,10 @@ margin-left: 10px;
  			font-size: 14px;
  			font-family:@HelvR;
  			color:@greyText;
+ 			transition:.3s;
+ 			&:hover{
+ 				color:@blue;
+ 			}
  		}
 	 }
 	 .price-product-card{
@@ -1637,63 +1642,67 @@ margin-left: 10px;
 .list-item-catalog{
 	background: @grey;
 }
-.list-item-catalog{
-	tr{
-		display: block;
-		transition:.3s;
-		&:hover{
-			 box-shadow: 0px 1px 5px 1px rgba(53, 127, 190, 0.4);
-		}
-		 &:hover td .min-max-price{
-			color:@blue;
-		}
-		 &:hover td{
-		 	border:1px solid transparent;
-		 	background: #fff;
-		 	border-top:1px solid @blue;
-		 	border-bottom: 1px solid ;
-		 	color:@blue;
-		 }
-		
-		&:hover td:first-child{
-			border-left:1px solid @blue;
-		}
-		&:hover td:last-child{
-			border-right:1px solid @blue;
-		}
-			
-		
-		
-		}
-		
-		td{
-		transition: .3s;
-		height: 77px;
-		text-align: center;
-		border:1px solid @borderGrey2;
-		
+
+.list-items-category{
+	padding-top: 12px;
+}
+.container-category{
+	border:1px solid transparent;
+	height: 77px;
+	&:hover{
+
+		border:1px solid red;
+		background:#fff;
 
 	}
-	.img-category{
-		width: 81px;
+}
+
+.img-category{
+	width: 81px;
+	float: left;
+	display: flex;
+	justify-content: center;
+
+	img{
+		align-self: center;
 	}
+}
+
+.img-category,.name-category,.quant-prod-category, .price-category{
+	float: left;
+	height: 100%;
+	border-left: 1px solid @borderGrey;
+}
+.img-category{
+	border:none;
+}
 	.name-category{
 			width:265px;
 			font-size: 20px;
 			color:@quantColor;
+			display: flex;
+			justify-content: center;
+
+			a{
+				align-self: center;
+			}
+
 			
 		}
 	.quant-prod-category{
 		width: 114px;
 		font-size: 20px;
-			color:@quantColor;
+		color:@quantColor;
+		text-align: center;
+		line-height: 75px;
 			
 
 	}
 	
-	.price-category{
-		width: 320px;
-	}
+.price-category{
+	width: 318px;
+	text-align: center;
+	line-height: 75px;
 }
 
 
@@ -1702,15 +1711,15 @@ margin-left: 10px;
 	font-size: 20px;
 	font-weight: 600;
 	color:@quantColor;
+	
+
 	.min-price, .max-price{
 		font-weight: 600;
 		font-family:HelvB;
 	}
 }
 
-.list-items-category{
-	padding-top: 11px;
-}
+
 .link-item-ateg-prod{
 	display:table-column;
 }
