@@ -1432,12 +1432,21 @@ footer {
   padding-top: 12px;
 }
 .container-category {
-  border: 1px solid transparent;
-  height: 77px;
+  border: 1px solid #d7d7d7;
+  height: 78px;
+  transition: .5s;
 }
 .container-category:hover {
-  border: 1px solid red;
   background: #fff;
+  border: 1px solid #3280bf;
+  box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
+}
+.container-category:hover div {
+  border-color: transparent;
+  color: #3280bf;
+}
+.container-category:hover .price-category .min-max-price {
+  color: #3280bf;
 }
 .img-category {
   width: 81px;
@@ -1477,7 +1486,7 @@ footer {
   line-height: 75px;
 }
 .price-category {
-  width: 318px;
+  width: 317px;
   text-align: center;
   line-height: 75px;
 }
@@ -1669,16 +1678,18 @@ footer {
   color: #5d5d5d;
   font-weight: 500;
 }
-.item-prod-table-list {
-  background: #fff;
+.img-prod-item,
+.name-product-item {
+  float: left;
 }
 .img-prod-item {
   height: 119px;
   position: relative;
+  padding-top: 7px;
 }
 .name-product-item {
   max-width: 288px;
-  padding-top: 11px;
+  padding-top: 34px;
   padding-left: 30px;
   letter-spacing: 1px;
 }
@@ -1688,9 +1699,8 @@ footer {
   font-weight: 500;
 }
 .wrap-articil-prod {
-  position: relative;
-  top: -3px;
   letter-spacing: 0px;
+  line-height: 14px;
 }
 .wrap-articil-prod .articul-prod {
   font-size: 10px;
@@ -1708,8 +1718,7 @@ footer {
   line-height: 1px;
 }
 .wrap-item-quntum {
-  display: block;
-  padding-top: 38px;
+  margin-top: 35px;
 }
 .wrap-delivery {
   margin-left: 15px;
@@ -1723,6 +1732,9 @@ footer {
   border: none;
   font-size: 20px;
   margin-left: 41px;
+}
+.quant-price-basket {
+  padding-left: 90px;
 }
 .wrap-basket {
   padding-bottom: 106px;
@@ -1747,12 +1759,21 @@ footer {
 }
 .buy-block {
   padding-right: 34px;
+  float: left;
+  padding-top: 37px;
 }
 .shares-block-item-list .new-prod-shares,
 .shares-block-item-list .sale-prod-shares,
 .shares-block-item-list .best-prod-shares {
   top: 11px;
   left: -8px;
+}
+.like-block-item {
+  float: left;
+  padding-top: 47px;
+}
+.wrap-item-quntum {
+  float: left;
 }
 .my-basket {
   padding-top: 42px;
@@ -2018,6 +2039,7 @@ footer {
 }
 .quant-price .wrap-delivery {
   margin-left: 15px;
+  line-height: 29px;
   clear: both;
 }
 .quant-price .wrap-price-item {

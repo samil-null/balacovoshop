@@ -1,0 +1,12 @@
+.tabs {
+  background: #ccf;
+}
+.tabs__item {
+  font-size: 20px;
+}
+.tabs__item_blue {
+  color: blue;
+}
+.tabs__item_red {
+  color: red;
+}

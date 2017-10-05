@@ -1647,13 +1647,24 @@ margin-left: 10px;
 	padding-top: 12px;
 }
 .container-category{
-	border:1px solid transparent;
-	height: 77px;
+	border:1px solid @borderGrey;
+	height: 78px;
+	transition:.5s;
 	&:hover{
 
-		border:1px solid red;
+		border:1px solid @blue;
 		background:#fff;
+	    border: 1px solid #3280bf;
+    	box-shadow: 0px 0px 5px 1px rgba(53, 127, 190, 0.4);
 
+	}
+	&:hover div{
+		border-color:transparent;
+		color:@blue;
+	}
+	&:hover .price-category .min-max-price{
+		
+		color:@blue;
 	}
 }
 
@@ -1700,7 +1711,7 @@ margin-left: 10px;
 	}
 	
 .price-category{
-	width: 318px;
+	width: 317px;
 	text-align: center;
 	line-height: 75px;
 }
@@ -1923,16 +1934,21 @@ margin-left: 10px;
 		}
 	}
 }
+
+.img-prod-item,.name-product-item{
+	float:left;
+}
 .item-prod-table-list{
-	background: #fff;
+	 
 }
 .img-prod-item{
 	height: 119px;
 	position: relative;
+	padding-top: 7px;
 }
 .name-product-item{
   	max-width: 288px;
-    padding-top: 11px;
+    padding-top: 34px;
     padding-left: 30px;
     letter-spacing: 1px;
 	.link-name-prod-item{
@@ -1944,9 +1960,10 @@ margin-left: 10px;
 }
 
 .wrap-articil-prod{
-	position: relative;
-    top: -3px;
+	
+   
     letter-spacing: 0px;
+    line-height: 14px;
 	.articul-prod{
 		font-size: 10px;
 		color:@artColor;
@@ -1965,8 +1982,7 @@ margin-left: 10px;
 	}
 }
 .wrap-item-quntum{
-	display: block;
-    padding-top: 38px;
+	margin-top: 35px;
 }
 .wrap-delivery{
     margin-left: 15px;
@@ -1981,6 +1997,10 @@ margin-left: 10px;
     font-size: 20px;
     margin-left: 41px;
     
+
+}
+.quant-price-basket{
+    padding-left: 90px;
 
 }
 .wrap-basket{
@@ -2004,6 +2024,7 @@ margin-left: 10px;
 	border-radius: 5px;
 	transition:.3s;
 	
+	
 	&:hover{
 		box-shadow: 0px 3px 15px -7px rgba(0, 0, 0, 0.75);
 		
@@ -2011,6 +2032,8 @@ margin-left: 10px;
 }
 .buy-block{
 	padding-right: 34px;
+	float: left;
+	padding-top: 37px;
 }
 .shares-block-item-list{
 	.new-prod-shares, .sale-prod-shares, .best-prod-shares{
@@ -2018,7 +2041,13 @@ margin-left: 10px;
 		left:-8px;
 	}
 }
-
+.like-block-item {
+	float: left;
+	padding-top: 47px;
+}
+.wrap-item-quntum{
+	float:left;
+}
 //Корзина 
 .my-basket{
 	padding-top: 42px;
@@ -2320,7 +2349,7 @@ margin-left: 10px;
 	}
 	.wrap-delivery{
     margin-left: 15px;
-    
+    line-height: 29px;
     clear: both;
 	}
 	.wrap-price-item{
