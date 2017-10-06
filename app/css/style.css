@@ -2261,6 +2261,66 @@ footer {
   font-size: 8px;
   line-height: 11px;
 }
+.big-logo-site {
+  padding-bottom: 7px;
+}
+.list-firm {
+  padding-top: 46px;
+}
+.list-firm__item {
+  width: 20%;
+  float: left;
+  padding: 0 1px;
+  height: 10px;
+  height: 100%;
+}
+.mark-bred-crumbs {
+  padding: 15px 0 9px 26px;
+}
+.drop-list-firm {
+  margin-right: -16px;
+}
+.title-drop-list-firm {
+  font-size: 20px;
+}
+.title-mark {
+  padding: 5px 10px;
+  background: #fafafa;
+}
+.title-mark .text-title-mark {
+  font-size: 12px;
+  color: #3280bf;
+}
+.item-mark {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.item-mark .img-mark-wrap {
+  transtion: .3s;
+  height: 100px;
+}
+.item-mark .img-mark-wrap:hover + .name-mark .link-mark {
+  color: #3280bf;
+}
+.item-mark .name-mark {
+  padding-bottom: 21px;
+  padding-top: 23px;
+}
+.item-mark .name-mark .link-mark {
+  color: #737373;
+}
+.item-mark .name-mark .link-mark:hover {
+  color: #3280bf;
+}
+.drop-btn-mark {
+  font-size: 14px !important;
+}
+.drop-list-mark li a {
+  font-size: 12px !important;
+}
+.left-list-catalog-mark {
+  margin-top: -5px !important;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1080px;
