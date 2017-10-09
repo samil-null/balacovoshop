@@ -393,7 +393,8 @@ img {
 }
 .wrap-title-shop .site-title {
   display: block;
-  min-width: 1100px;
+  min-width: 1136px;
+  text-align: center;
 }
 .wrap-title-shop .site-title .name-shop {
   line-height: 168px;
