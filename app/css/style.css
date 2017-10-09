@@ -51,7 +51,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", Arial, sans-serif;
 }
 input {
   outline: none;
@@ -98,7 +98,7 @@ img {
 }
 .list-numbers li .phone-number {
   color: #686868;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 25px;
@@ -107,7 +107,7 @@ img {
   font-size: 9px;
   font-weight: 300;
   line-height: 1px;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", Arial, sans-serif;
 }
 .wrap-top-search {
   background: #fff;
@@ -176,7 +176,7 @@ img {
   display: block;
 }
 .money {
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", Arial, sans-serif;
   font-size: 20px ;
   display: block;
   float: left;
@@ -192,7 +192,7 @@ img {
 .left-bar li a {
   display: block;
   padding: 7px 9px 7px 9px;
-  font-family: "HelveticaLight";
+  font-family: "HelveticaLight", Arial, sans-serif;
   color: #fff;
   font-size: 20px;
   font-weight: 300;
@@ -361,7 +361,7 @@ img {
   font-weight: 700;
 }
 .product-day .title-prod .prod-head {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #fff;
   text-align: right;
   margin: 0;
@@ -402,7 +402,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 130px;
-  font-family: "RalewayBlack";
+  font-family: "RalewayBlack", Arial, sans-serif;
   letter-spacing: 0;
   color: #3280bf;
 }
@@ -411,7 +411,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 130px;
-  font-family: "RalewayBlack";
+  font-family: "RalewayBlack", Arial, sans-serif;
   letter-spacing: 0;
   color: #97cb12;
 }
@@ -439,7 +439,7 @@ img {
   box-shadow: 0px 4px 91px -25px rgba(0, 0, 0, 0.25);
 }
 .header-sect {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 36px;
   letter-spacing: .3px;
   font-weight: 500;
@@ -458,7 +458,7 @@ img {
   right: 0px;
   top: 17px;
   font-size: 14px;
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
 }
 .item-top-prod .link-prod-img {
   display: block;
@@ -554,7 +554,7 @@ img {
   font-size: 14px;
   color: #5d5d5d;
   background: rgba(255, 255, 255, 0.5);
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 1.6px;
   transition: 0.3s cubic-bezier(0.87, 0.09, 0.72, 0.6);
@@ -616,7 +616,7 @@ img {
   margin-top: 14px;
   line-height: 19px;
   letter-spacing: 0px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #afafaf;
 }
 .pre-footer-text_inner {
@@ -624,7 +624,7 @@ img {
   margin-top: 14px;
   line-height: 19px;
   letter-spacing: 0px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #afafaf;
   margin-top: 5px;
 }
@@ -784,7 +784,7 @@ footer {
 }
 .name-catalog-title {
   font-size: 28px;
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
   color: #3280bf;
   letter-spacing: -0.2px;
   font-weight: 500;
@@ -827,7 +827,7 @@ footer {
   font-size: 16px;
   letter-spacing: 0.1px;
   line-height: 25px;
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
 }
 .drop-list li a:hover {
   color: #3280bf;
@@ -865,7 +865,7 @@ footer {
   max-height: 500px;
 }
 .title-pre-footer {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 22px ;
   color: #3280bf;
   font-weight: 500;
@@ -1125,7 +1125,7 @@ footer {
   padding: 33px 0;
 }
 .name-disc-product {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 24px;
   letter-spacing: 0.2px;
   color: #737373;
@@ -1139,7 +1139,7 @@ footer {
 .wrap-text-desc-product .desc-product,
 .wrap-text-desc-product .char-name {
   font-size: 16px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #737373;
   font-weight: 600;
 }
@@ -1283,7 +1283,7 @@ footer {
 .new-prod-shares .text-shares,
 .sale-prod-shares .text-shares,
 .best-prod-shares .text-shares {
-  font-family: "MyriadProBold";
+  font-family: "MyriadProBold", Arial, sans-serif;
   font-size: 18px;
   text-transform: capitalize;
   position: relative;
@@ -1308,7 +1308,7 @@ footer {
   letter-spacing: -2.1px;
 }
 .wrap-time-dey-text .time-bay-text {
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
   font-size: 36px;
   color: #3280bf;
   font-weight: 600;
@@ -1336,7 +1336,7 @@ footer {
 .big-card-product .sale-block .size-sale {
   color: #f0291f;
   font-size: 16px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
 }
 .big-card-product .wrap-name-product {
   padding-top: 10px;
@@ -1344,7 +1344,7 @@ footer {
 }
 .big-card-product .wrap-name-product .name-prod {
   font-size: 14px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #737373;
   transition: .3s;
 }
@@ -1397,7 +1397,7 @@ footer {
 .product-day-email .two-part-text {
   color: #afafaf;
   font-size: 16px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
 }
 .product-day-email .one-part-text .link-product-day,
 .product-day-email .two-part-text .link-product-day {
@@ -1700,7 +1700,7 @@ footer {
 }
 .name-product-item .link-name-prod-item {
   color: #3280bf;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-weight: 500;
 }
 .wrap-articil-prod {
@@ -1811,7 +1811,7 @@ footer {
 }
 .title-about-basket .title-text {
   color: #fff;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 14px;
 }
 .about-basket-2 {
@@ -1829,7 +1829,7 @@ footer {
 }
 .about-basket-2 .text-about-basket-2 {
   font-size: 14px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   color: #3280bf;
 }
 .wrap-deliver-setting {
@@ -1874,7 +1874,7 @@ footer {
 }
 .wrap-text-deliver .price-delivery {
   line-height: 18px;
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
 }
 .choice-delivery {
   margin-top: 23px;
@@ -1933,7 +1933,7 @@ footer {
   padding-top: 8px;
   letter-spacing: -0.4px;
   color: #3280bf;
-  font-family: "HelveticaMedium";
+  font-family: "HelveticaMedium", Arial, sans-serif;
 }
 .wrap-finish-price .text-finish-price {
   font-size: 14px;
@@ -2057,7 +2057,7 @@ footer {
 }
 .notenough-money-window .text-notmaney {
   color: #f0291f;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -2077,7 +2077,7 @@ footer {
 .name-order {
   color: #3280bf;
   font-size: 16px;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
 }
 .wrap-order-date .order-input {
   min-width: 100%;
@@ -2126,7 +2126,7 @@ footer {
   line-height: 17px;
 }
 .choice-method .methode-buy-text .text-method {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-weight: 100;
   color: #737373;
 }
@@ -2169,13 +2169,13 @@ footer {
   padding-bottom: 63px;
 }
 .thank-buy-text {
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 26px;
   color: #3280bf;
 }
 .wrap-about-step-3 {
   color: #3280bf;
-  font-family: "HelveticaRoman";
+  font-family: "HelveticaRoman", Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 0.2px;
   margin-top: 9px;
@@ -2202,7 +2202,7 @@ footer {
 }
 .text-contact {
   font-size: 60px;
-  font-family: "HelveticaUltraLight";
+  font-family: "HelveticaUltraLight", Arial, sans-serif;
   color: #fff;
   margin-left: -3px;
 }
@@ -2355,7 +2355,7 @@ footer {
 }
 .title-payment .text-title-payment {
   color: #3280bf;
-  font-family: "HelveticaUltraLight";
+  font-family: "HelveticaUltraLight", Arial, sans-serif;
   font-size: 40px;
 }
 .wrap-text-about-payment {
@@ -2454,7 +2454,7 @@ footer {
 .wrap-receiving-title .receiving-title {
   font-size: 60px;
   color: #fff;
-  font-family: "HelveticaUltraLight";
+  font-family: "HelveticaUltraLight", Arial, sans-serif;
 }
 .wrap-text-receiving-prod {
   margin-top: 2px;
@@ -2474,7 +2474,7 @@ footer {
   color: #fff;
 }
 .wrap-payment-addres-3 .addres-text {
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", Arial, sans-serif;
   font-size: 12px;
 }
 .wrap-payment-addres-3 .main-addres {
@@ -2499,7 +2499,7 @@ footer {
 }
 .title-about-shop {
   font-size: 26px;
-  font-family: "HelveticaUltraLight";
+  font-family: "HelveticaUltraLight", Arial, sans-serif;
   color: #3280bf;
 }
 .item-about-wrap-text {
@@ -2522,7 +2522,7 @@ footer {
 }
 .charity-wrap-title .charity-title {
   font-size: 60px;
-  font-family: "HelveticaUltraLight";
+  font-family: "HelveticaUltraLight", Arial, sans-serif;
   color: #3280bf;
   letter-spacing: -0.2px;
 }
@@ -2554,7 +2554,7 @@ footer {
 .address-charity .addres-hone-title {
   color: #3280bf;
   font-size: 12px;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", Arial, sans-serif;
 }
 .address-charity .main-addres-home {
   color: #3280bf;
@@ -2573,14 +2573,14 @@ footer {
 }
 .charity-procent .title-procent-charity .title-proc-text {
   font-size: 158px;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", Arial, sans-serif;
   color: #fff;
   line-height: .7;
 }
 .text-proc-wrap .text-proc {
   color: #fff;
   font-size: 23px;
-  font-family: "HelveticaBold";
+  font-family: "HelveticaBold", Arial, sans-serif;
   line-height: 40px;
 }
 .about-company {
