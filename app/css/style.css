@@ -2541,6 +2541,10 @@ footer {
 .wrap-document-icon {
   height: 108px;
 }
+.address-charity {
+  z-index: 5;
+  position: relative;
+}
 .address-charity .addres-hone-title {
   color: #3280bf;
   font-size: 12px;
@@ -2575,6 +2579,7 @@ footer {
 }
 .about-company {
   padding-top: 96px;
+  padding-bottom: 73px;
 }
 .about-wrap-text-company {
   margin-top: 21px;
@@ -2584,6 +2589,18 @@ footer {
 }
 .logo-right-about {
   margin-top: 30px;
+}
+.wrap-charity-footer-img {
+  margin-top: -38px;
+}
+.wrap-document-icon {
+  padding-top: 11px;
+}
+.download-doc::after {
+  font-family: FontAwesome;
+  content: "\f0f6";
+  font-size: 70px;
+  color: #3280bf;
 }
 @media (min-width: 1200px) {
   .container {
